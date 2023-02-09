@@ -1,0 +1,46 @@
+﻿
+@{
+    ViewBag.Title = "SignUp";
+}
+@Html.ValidationSummary();
+<div class="container p-3 my-3 bg-primary text-white">
+    <h2>SignUp</h2>
+</div>
+<form action="" method="post">
+    <div class="form-group">
+        <label for="uname">Username:</label>
+        <input type="text" class="form-control" id="uname" placeholder="Enter username" name="uname">
+    </div>
+    <div class="form-group">
+        <label for="pwd">ID:</label>
+        <input type="password" class="form-control" id="id" placeholder="Enter Id" name="id">
+    </div>
+    <br>
+    Gender:<br>
+    <input type="radio" class="radio-inline" name="gender" id="male">
+    <label for="male">Male</label><br>
+    <input type="radio" class="radio-inline" name="gender" id="female">
+    <label for="female">Female</label>
+    <br>
+    Profession:
+    <select class="" name="porf">
+        <option value="Teacher">Teacher</option>
+        <option value="Student">Student</option>
+        <option value="General">General</option>
+    </select>
+    <br>
+    Hobbies:
+    <input type="checkbox" name="hobbies[]" id="games">
+    <label for="games">Games</label>
+    <input type="checkbox" name="hobbies[]" id="sports">
+    <label for="sports">Sports</label>
+    <input type="checkbox" name="hobbies[]" id="traveling">
+    <label for="traveling">Traveling</label>
+    <input type="checkbox" name="hobbies[]" id="music">
+    <label for="music">Music</label>
+    <br>
+    Date of Birth:
+    <input type="date" name="date">
+    <br><br>
+    <input type="submit" value="Submit">
+</form>
